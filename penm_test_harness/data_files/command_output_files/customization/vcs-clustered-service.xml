@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litp:vcs-clustered-service xmlns:litp="http://www.ericsson.com/litp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="{VM_ID}" xsi:schemaLocation="http://www.ericsson.com/litp litp--schema/litp.xsd">
+  <active>{ACTIVE_INSTANCE_COUNT}</active>
+  <name>{VM_ID}</name>
+  <node_list>{NODE_LIST}</node_list>
+  <standby>{STANDBY_INSTANCE_COUNT}</standby>
+  <litp:clustered-service-applications-collection id="applications">
+    <litp:vm-service-inherit source_path="/software/services/{VM_ID}" id="vm-service_{VM_ID}" />
+  </litp:clustered-service-applications-collection>
+  <litp:clustered-service-ha_configs-collection id="ha_configs">
+    <litp:ha-service-config id="haservice_{VM_ID}">
+      <status_interval>{STATUS_INTERVAL}</status_interval>
+      <status_timeout>{STATUS_TIMEOUT}</status_timeout>
+      <clean_timeout>{CLEAN_TIMEOUT}</clean_timeout>
+      <fault_on_monitor_timeouts>{FAULT_ON_MONITOR_TIMEOUTS}</fault_on_monitor_timeouts>
+      <restart_limit>{RESTART_LIMIT}</restart_limit>
+      <startup_retry_limit>{STARTUP_RETRY_LIMIT}</startup_retry_limit>
+      <tolerance_limit>{TOLERANCE_LIMIT}</tolerance_limit>
+    </litp:ha-service-config>
+  </litp:clustered-service-ha_configs-collection>
+  <litp:clustered-service-runtimes-collection id="runtimes" />
+  <offline_timeout>{OFFLINE_TIMEOUT}</offline_timeout>
+  <online_timeout>{ONLINE_TIMEOUT}</online_timeout>
+</litp:vcs-clustered-service>

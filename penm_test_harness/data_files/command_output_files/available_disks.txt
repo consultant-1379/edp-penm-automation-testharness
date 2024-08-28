@@ -1,0 +1,24 @@
+Available Disks:
+Bus 1 Enclosure 0 Disk 24
+Bus 1 Enclosure 0 Disk 23
+Bus 1 Enclosure 0 Disk 22
+Bus 1 Enclosure 0 Disk 21
+Bus 1 Enclosure 0 Disk 20
+Bus 1 Enclosure 0 Disk 19
+Bus 1 Enclosure 0 Disk 18
+Bus 1 Enclosure 0 Disk 17
+Bus 1 Enclosure 0 Disk 16
+Bus 1 Enclosure 0 Disk 15
+Bus 1 Enclosure 0 Disk 14
+Bus 1 Enclosure 0 Disk 13
+Bus 1 Enclosure 0 Disk 12
+Bus 1 Enclosure 0 Disk 11
+Bus 1 Enclosure 0 Disk 10
+Bus 1 Enclosure 0 Disk 9
+Bus 1 Enclosure 0 Disk 8
+Bus 1 Enclosure 0 Disk 7
+Bus 1 Enclosure 0 Disk 6
+Bus 1 Enclosure 0 Disk 5
+Bus 1 Enclosure 0 Disk 4
+Bus 0 Enclosure 1 Disk 24
+Bus 0 Enclosure 0 Disk 24

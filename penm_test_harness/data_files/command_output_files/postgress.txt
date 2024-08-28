@@ -1,0 +1,111 @@
+{
+    "_embedded": {
+        "item": [
+            {
+                "item-type-name": "collection-of-vcs-trigger",
+                "applied_properties_determinable": true,
+                "state": "Applied",
+                "_links": {
+                    "self": {
+                        "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/services/postgres_clustered_service/triggers"
+                    },
+                    "collection-of": {
+                        "href": "https://localhost:9999/litp/rest/v1/item-types/vcs-trigger"
+                    }
+                },
+                "id": "triggers"
+            },
+            {
+                "item-type-name": "collection-of-runtime-entity",
+                "applied_properties_determinable": true,
+                "state": "Applied",
+                "_links": {
+                    "self": {
+                        "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/services/postgres_clustered_service/runtimes"
+                    },
+                    "collection-of": {
+                        "href": "https://localhost:9999/litp/rest/v1/item-types/runtime-entity"
+                    }
+                },
+                "id": "runtimes"
+            },
+            {
+                "item-type-name": "ref-collection-of-service",
+                "applied_properties_determinable": true,
+                "state": "Applied",
+                "_links": {
+                    "self": {
+                        "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/services/postgres_clustered_service/applications"
+                    },
+                    "ref-collection-of": {
+                        "href": "https://localhost:9999/litp/rest/v1/item-types/service"
+                    }
+                },
+                "id": "applications"
+            },
+            {
+                "item-type-name": "collection-of-ha-config-base",
+                "applied_properties_determinable": true,
+                "state": "Applied",
+                "_links": {
+                    "self": {
+                        "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/services/postgres_clustered_service/ha_configs"
+                    },
+                    "collection-of": {
+                        "href": "https://localhost:9999/litp/rest/v1/item-types/ha-config-base"
+                    }
+                },
+                "id": "ha_configs"
+            },
+            {
+                "item-type-name": "collection-of-vip",
+                "applied_properties_determinable": true,
+                "state": "Applied",
+                "_links": {
+                    "self": {
+                        "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/services/postgres_clustered_service/ipaddresses"
+                    },
+                    "collection-of": {
+                        "href": "https://localhost:9999/litp/rest/v1/item-types/vip"
+                    }
+                },
+                "id": "ipaddresses"
+            },
+            {
+                "item-type-name": "ref-collection-of-file-system",
+                "applied_properties_determinable": true,
+                "state": "Applied",
+                "_links": {
+                    "self": {
+                        "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/services/postgres_clustered_service/filesystems"
+                    },
+                    "ref-collection-of": {
+                        "href": "https://localhost:9999/litp/rest/v1/item-types/file-system"
+                    }
+                },
+                "id": "filesystems"
+            }
+        ]
+    },
+    "id": "postgres_clustered_service",
+    "item-type-name": "vcs-clustered-service",
+    "applied_properties_determinable": true,
+    "state": "Applied",
+    "_links": {
+        "self": {
+            "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/services/postgres_clustered_service"
+        },
+        "item-type": {
+            "href": "https://localhost:9999/litp/rest/v1/item-types/vcs-clustered-service"
+        }
+    },
+    "properties": {
+        "name": "postgres",
+        "standby": "0",
+        "node_list": "db-1",
+        "offline_timeout": "180",
+        "active": "1",
+        "online_timeout": "180"
+    }
+}
+

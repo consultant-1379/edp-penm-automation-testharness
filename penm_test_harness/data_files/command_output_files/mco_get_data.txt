@@ -1,0 +1,173 @@
+[
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 24.8162599866486,
+      "since_lastrun": 1329,
+      "config_retrieval_time": 8.51087498664856,
+      "changed_resources": 53,
+      "out_of_sync_resources": 53,
+      "config_version": "16",
+      "lastrun": 1624000990,
+      "total_resources": 938
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb7330",
+    "agent": "rpcutil"
+  },
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 27.8379988409576,
+      "since_lastrun": 1182,
+      "config_retrieval_time": 9.07179284095764,
+      "changed_resources": 1,
+      "out_of_sync_resources": 1,
+      "config_version": "16",
+      "lastrun": 1624001137,
+      "total_resources": 915
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb7333",
+    "agent": "rpcutil"
+  },
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 24.4040509778748,
+      "since_lastrun": 1051,
+      "config_retrieval_time": 9.45819997787476,
+      "changed_resources": 53,
+      "out_of_sync_resources": 53,
+      "config_version": "16",
+      "lastrun": 1624001268,
+      "total_resources": 938
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb7334",
+    "agent": "rpcutil"
+  },
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 48.116142989151,
+      "since_lastrun": 670,
+      "config_retrieval_time": 14.609050989151,
+      "changed_resources": 1,
+      "out_of_sync_resources": 1,
+      "config_version": "16",
+      "lastrun": 1624001649,
+      "total_resources": 1280
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb7331",
+    "agent": "rpcutil"
+  },
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 44.674514964798,
+      "since_lastrun": 585,
+      "config_retrieval_time": 13.982136964798,
+      "changed_resources": 1,
+      "out_of_sync_resources": 1,
+      "config_version": "16",
+      "lastrun": 1624001734,
+      "total_resources": 1249
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb7335",
+    "agent": "rpcutil"
+  },
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 48.3394019510193,
+      "since_lastrun": 681,
+      "config_retrieval_time": 16.6393599510193,
+      "changed_resources": 1,
+      "out_of_sync_resources": 1,
+      "config_version": "16",
+      "lastrun": 1624001638,
+      "total_resources": 1289
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb7332",
+    "agent": "rpcutil"
+  },
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 46.7413129924774,
+      "since_lastrun": 290,
+      "config_retrieval_time": 13.7776629924774,
+      "changed_resources": 1,
+      "out_of_sync_resources": 1,
+      "config_version": "16",
+      "lastrun": 1624002029,
+      "total_resources": 1240
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb7336",
+    "agent": "rpcutil"
+  },
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 40.1845962103729,
+      "since_lastrun": 696,
+      "config_retrieval_time": 16.0308082103729,
+      "changed_resources": 1,
+      "out_of_sync_resources": 1,
+      "config_version": "16",
+      "lastrun": 1624001623,
+      "total_resources": 2031
+    },
+    "statuscode": 0,
+    "sender": "ieatloaner332",
+    "agent": "rpcutil"
+  },
+  {
+    "statusmsg": "OK",
+    "action": "get_data",
+    "data": {
+      "failed_resources": 0,
+      "managed": false,
+      "total_time": 26.5025281105957,
+      "since_lastrun": 931,
+      "config_retrieval_time": 8.0877571105957,
+      "changed_resources": 1,
+      "out_of_sync_resources": 1,
+      "config_version": "16",
+      "lastrun": 1624001388,
+      "total_resources": 906
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb7337",
+    "agent": "rpcutil"
+  }
+]

@@ -1,0 +1,29 @@
+2021-07-28 09:10:56.401 INFO  log_header                    : Process Upgrade options
+2021-07-28 09:10:56.410 INFO  log_header                    : Logging Command Line Arguments
+2021-07-28 09:10:56.538 INFO  log_header                    : Verify if Gossip Router Upgrade
+2021-07-28 09:11:07.472 INFO  log_header                    : Executing Healthchecks
+2021-07-28 09:11:28.633 INFO  log_header                    : CHECKING VM RAM AND CPU USAGE PER NODE
+2021-07-28 09:13:13.568 INFO  log_header                    : CHECKING ALL NODES FOR STALE MOUNTS
+2021-07-28 09:13:15.998 INFO  log_header                    : CHECKING MS, NAS AND PEER NODE FILESYSTEM USAGE
+2021-07-28 09:13:18.800 INFO  log_header                    : CHECKING KEY LSB SERVICES IN THE DEPLOYMENT
+2021-07-28 09:13:27.583 INFO  log_header                    : CHECKING VCS CLUSTER SYSTEMS STATUS
+2021-07-28 09:13:32.249 INFO  log_header                    : CHECKING VCS SERVICE GROUP STATUS
+2021-07-28 09:13:40.208 INFO  log_header                    : CHECKING SAN STORAGEPOOL STATUS
+2021-07-28 09:13:40.385 INFO  log_header                    : CHECKING SAN FOR CRITICAL ALERTS
+2021-07-28 09:13:40.402 INFO  log_header                    : CHECKING NAS STATUS
+2021-07-28 09:14:05.663 INFO  log_header                    : CHECKING MDT STATUS
+2021-07-28 09:14:05.680 INFO  log_header                    : CHECKING CONSUL STATUS
+2021-07-28 09:14:05.722 INFO  log_header                    : CHECKING HEARTBEAT STATUS
+2021-07-28 09:14:10.689 INFO  log_header                    : CHECKING POSTGRES EXPIRY STATUS
+2021-07-28 09:14:11.918 INFO  log_header                    : CHECKING PATHS TO DISKS ARE ACTIVE
+2021-07-28 09:14:11.963 INFO  log_header                    : NEO4J CLUSTER AVAILABILITY CHECK
+2021-07-28 09:14:19.347 INFO  log_header                    : NEO4J RAFT INDEX LAG CHECK
+2021-07-28 09:14:19.348 INFO  log_header                    : CHECKING PUPPET ENABLED ON ALL NODES
+2021-07-28 09:14:21.702 INFO  log_header                    : Successfully Completed ENM System Healthcheck
+2021-07-28 09:16:44.703 INFO  log_header                    : Substitute XML parameters
+2021-07-28 09:16:49.829 INFO  log_header                    : Update Infrastructure
+2021-07-28 09:17:03.037 INFO  log_header                    : Substitute XML parameters
+2021-07-28 09:17:05.488 INFO  log_header                    : Load XML Plan
+2021-07-28 09:17:59.854 INFO  log_header                    : Remove items from the runtime model
+2021-07-28 09:18:03.172 INFO  execute_post_upgrade_steps    : System successfully upgraded
+2021-07-28 09:18:05.909 INFO  log_header                    : Create and Run Plan

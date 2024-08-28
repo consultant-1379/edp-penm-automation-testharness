@@ -1,0 +1,8 @@
+{
+   "properties":{
+      "management_ipv4":"10.210.252.71",
+      "user_name":"root",
+      "name":"cloud-ms",
+      "password_key":"key-for-sfs"
+   }
+}

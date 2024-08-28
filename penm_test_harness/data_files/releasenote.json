@@ -1,0 +1,177 @@
+{
+    "softwareGatewayTickets": [],
+    "productNumber": "AOM901151",
+    "drop": "21.10",
+    "productSet": "ENM",
+    "deliverables": [
+        {
+            "functionalDesignation": "ENM Base software ISO",
+            "checksum": "77260217975198171204ba2122abcb53",
+            "rstate": "R1EM50",
+            "filename": "ERICenm_CXP9027091-1.111.50.iso",
+            "productNumber": "CXP9027091"
+        },
+        {
+            "functionalDesignation": "RHEL76 OS Patch Set",
+            "checksum": "14f6c3aab36d0e5a2348fbf18e8096df",
+            "rstate": "R1U01",
+            "filename": "RHEL76_OS_Patch_Set_CXP9037739-1.15.1.iso",
+            "productNumber": "CXP9037739"
+        },
+        {
+            "functionalDesignation": "RHEL6 Patches",
+            "checksum": "b4a28a66aedfa5c871f45c8ca08584ec",
+            "rstate": "R2Y01",
+            "filename": "RHEL_OS_Patch_Set_CXP9034997-2.18.1.iso",
+            "productNumber": "CXP9034997"
+        },
+        {
+            "functionalDesignation": "VNF LCM Openstack Media package",
+            "checksum": "8025e4a57e8067163fb60ea2c4fb2f8e",
+            "rstate": "R5AZ08",
+            "filename": "ERICvnflcm_CXP9034858-5.39.8.tar.gz",
+            "productNumber": "CXP9034858"
+        },
+        {
+            "functionalDesignation": "EDP Auto deploy",
+            "checksum": "c3c14d52ab5bf2dbb04341a5baffbcea",
+            "rstate": "R1AE02",
+            "filename": "ERICautodeploy_CXP9038326-1.24.2.tar.gz",
+            "productNumber": "CXP9038326"
+        },
+        {
+            "functionalDesignation": "NAS RHEL7 OS Patch set",
+            "checksum": "d5c9cbf7c14234517cf574d82945e98e",
+            "rstate": "R2C01",
+            "filename": "nas-rhel7-os-patch-set_CXP9036738-2.2.1.tar.gz",
+            "productNumber": "CXP9036738"
+        },
+        {
+            "functionalDesignation": "LITP Base Software - 2.x",
+            "checksum": "b1aae65b820b6695a7d42b5e34d5c790",
+            "rstate": "R2FS02",
+            "filename": "ERIClitp_CXP9024296-2.133.2.iso",
+            "productNumber": "CXP9024296"
+        },
+        {
+            "functionalDesignation": "Northstar",
+            "checksum": "39c66626c79eacefe2f21d3764ed9f72",
+            "rstate": "R3B02",
+            "filename": "ERICnorthstar_CXP9037696-3.1.2.gz",
+            "productNumber": "CXP9037696"
+        },
+        {
+            "functionalDesignation": "Virtual Management Server (VMS)",
+            "checksum": "a4cfc95c56e0eb149fdd361415717a44",
+            "rstate": "R2F18",
+            "filename": "ERICvms_CXP9035350-2.5.18.tar.gz",
+            "productNumber": "CXP9035350"
+        },
+        {
+            "functionalDesignation": "VMware Patches",
+            "checksum": "c8558653e4d2c636a4b0c8aa370c56cf",
+            "rstate": "R1Z09",
+            "filename": "ERICvmwarepatches_CXP9035795-1.19.9.tar.gz",
+            "productNumber": "CXP9035795"
+        },
+        {
+            "functionalDesignation": "VMware Integrated Openstack (VIO)",
+            "checksum": "c417f92e1052ce4d6dc53a55c0f2698d",
+            "rstate": "R3A01",
+            "filename": "EXTRvmwarevio_CXP9035975-3.0.1.tar.gz",
+            "productNumber": "CXP9035975"
+        },
+        {
+            "functionalDesignation": "NAS config",
+            "checksum": "5d5bcc1ea924cb13162beb8d5ae25505",
+            "rstate": "R1BE01",
+            "filename": "ERICnasconfig_CXP9033343-1.44.1.tar.gz",
+            "productNumber": "CXP9033343"
+        },
+        {
+            "functionalDesignation": "Firmware upgrade automation tool",
+            "checksum": "9122ed46e85fb082607d88b919c5e981",
+            "rstate": "R1T01",
+            "filename": "ERICfwupgrade_CXP9036881-1.14.1.tar.gz",
+            "productNumber": "CXP9036881"
+        },
+        {
+            "functionalDesignation": "AGAT",
+            "checksum": "68ea02176ba76b4d6594024042831cc1",
+            "rstate": "R1EA22",
+            "filename": "ERICenmagat_CXP9036311-1.100.22.iso",
+            "productNumber": "CXP9036311"
+        },
+        {
+            "functionalDesignation": "Test Executor",
+            "checksum": "1443eec098c33a89a4afbbb97d9719ce",
+            "rstate": "R2BK02",
+            "filename": "ERICtafte_CXP9033012-2.49.2.tar.gz",
+            "productNumber": "CXP9033012"
+        },
+        {
+            "functionalDesignation": "VMware vCenter Server Appliance",
+            "checksum": "f3bc7acfc55f13d13122e0a3d95fd63a",
+            "rstate": "R6A01",
+            "filename": "EXTRvmwarevcenter_CXP9035456-6.0.1.iso",
+            "productNumber": "CXP9035456"
+        },
+        {
+            "functionalDesignation": "VMware EXSI",
+            "checksum": "15649fe2b165ae3363b104bc1203e1e7",
+            "rstate": "R4A01",
+            "filename": "EXTRvmwareesxi_CXP9035974-4.0.1.iso",
+            "productNumber": "CXP9035974"
+        },
+        {
+            "functionalDesignation": "VMware Guest Tools",
+            "checksum": "2ab85e7e3828d86a28726ab7ce476fad",
+            "rstate": "R2A02",
+            "filename": "EXTRvmwareguesttools_CXP9035510-2.0.2.iso",
+            "productNumber": "CXP9035510"
+        },
+        {
+            "functionalDesignation": "Small ENM config",
+            "checksum": "09cc868e9054aecda59ea5afee2d5aad",
+            "rstate": "R1AY17",
+            "filename": "ERICsmallenmconfig_CXP9035391-1.38.17.tar.gz",
+            "productNumber": "CXP9035391"
+        },
+        {
+            "functionalDesignation": "NAS 7.4 Media",
+            "checksum": "438af97458ff5ee6b6f7cbc2a2a526aa",
+            "rstate": "R1B01",
+            "filename": "NAS7.4-Media_CXP9036773-1.1.1.iso",
+            "productNumber": "CXP9036773"
+        },
+        {
+            "functionalDesignation": "Redhat Enterprise Linux 7.6 Install ISO",
+            "checksum": "7f0eb16e287e732af4046359184cf6f7",
+            "rstate": "R1A01",
+            "filename": "RHEL76-MEDIA_CXP9037123-1.0.1.iso",
+            "productNumber": "CXP9037123"
+        },
+        {
+            "functionalDesignation": "NAS RHEL OS Patch Set",
+            "checksum": "856fd8c7163fd98fea47ed08347642a4",
+            "rstate": "R1D04",
+            "filename": "nas-rhel-os-patch-set_CXP9033713-1.3.4.tar.gz",
+            "productNumber": "CXP9033713"
+        },
+        {
+            "functionalDesignation": "RHEL 7.4 Media",
+            "checksum": "227880f6a3cee6b745e7f204586c8988",
+            "rstate": "R1A02",
+            "filename": "RHEL74-Media_CXP9035111-1.0.2.iso",
+            "productNumber": "CXP9035111"
+        },
+        {
+            "functionalDesignation": "Redhat 6.10 OS media",
+            "checksum": "5e131530e18bef7ff0a5d70bd2eb9c3d",
+            "rstate": "R1A01",
+            "filename": "RHEL6.10_Media_CXP9036772-1.0.1.iso",
+            "productNumber": "CXP9036772"
+        }
+    ],
+    "rstate": "NOT_RELEASED"
+}

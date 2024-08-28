@@ -1,0 +1,7 @@
+{
+  "cxp": "9037739",
+  "rhel_version": "7.6",
+  "parent_cxp": "9037123",
+  "R-state": "R1V01",
+  "nexus-version": "1.16.1"
+}

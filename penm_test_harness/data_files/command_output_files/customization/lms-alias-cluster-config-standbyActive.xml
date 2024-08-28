@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litp:alias-node-config-aliases-collection xmlns:litp="http://www.ericsson.com/litp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ericsson.com/litp litp--schema/litp.xsd" id="aliases">
+  <litp:alias id="{VM_ID}_alias">
+    <address>{IPv4_INTERNAL}</address>
+    <alias_names>{VM_ID}</alias_names>
+  </litp:alias>
+</litp:alias-node-config-aliases-collection>

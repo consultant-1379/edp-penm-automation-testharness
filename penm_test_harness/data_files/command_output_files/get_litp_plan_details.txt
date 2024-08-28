@@ -1,0 +1,274 @@
+{
+	"item-type-name": "plan",
+	"_links": {
+		"self": {
+			"href": "https://localhost:9999/litp/rest/v1/plans/plan"
+		},
+		"item-type": {
+			"href": "https://localhost:9999/litp/rest/v1/item-types/plan"
+		}
+	},
+	"_embedded": {
+		"item": [{
+			"item-type-name": "collection-of-phase",
+			"_links": {
+				"self": {
+					"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases"
+				},
+				"collection-of": {
+					"href": "https://localhost:9999/litp/rest/v1/item-types/phase"
+				}
+			},
+			"_embedded": {
+				"item": [{
+						"item-type-name": "phase",
+						"_links": {
+							"self": {
+								"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/1"
+							},
+							"item-type": {
+								"href": "https://localhost:9999/litp/rest/v1/item-types/phase"
+							}
+						},
+						"_embedded": {
+							"item": [{
+								"item-type-name": "collection-of-task",
+								"_links": {
+									"self": {
+										"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/1/tasks"
+									},
+									"collection-of": {
+										"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+									}
+								},
+								"_embedded": {
+									"item": [{
+											"description": "Update node 'ieatloaner332' host file with node 'ieatrcxb7330' entry",
+											"call_id": "ieatrcxb7330",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/1/tasks/523ba97f-0753-42d9-844a-6ea21aac901e"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/nodes/db-1/network_interfaces/bond0"
+												}
+											},
+											"id": "523ba97f-0753-42d9-844a-6ea21aac901e",
+											"call_type": "hosts::hostentry"
+										},
+										{
+											"description": "Configure bridge \"br2\" on node \"ieatloaner332\"",
+											"call_id": "br2",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/1/tasks/ffdf3b11-4b57-460c-8ce5-59c0a16fc466"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/ms/network_interfaces/br2"
+												}
+											},
+											"id": "ffdf3b11-4b57-460c-8ce5-59c0a16fc466",
+											"call_type": "network::config"
+										},
+										{
+											"description": "Update node \"ieatloaner332\" host file with node \"ieatloaner332\" entry",
+											"call_id": "ieatloaner332",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/1/tasks/ec9278a6-3135-420b-912f-7e6b46b70641"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/ms/network_interfaces/br3"
+												}
+											},
+											"id": "ec9278a6-3135-420b-912f-7e6b46b70641",
+											"call_type": "hosts::hostentry"
+										},
+										{
+											"description": "Add firewall rule \"018 vmmonitord\" on node \"ieatloaner332\"",
+											"call_id": "_ms_fw_vmmonitord",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/1/tasks/989a5be5-de1b-4cd7-970b-90cc51b4147a"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/ms/configs/fw_config/rules/fw_vmmonitord"
+												}
+											},
+											"id": "989a5be5-de1b-4cd7-970b-90cc51b4147a",
+											"call_type": "firewalls::rules"
+										}
+									]
+								},
+								"id": "tasks"
+							}]
+						},
+						"id": 1
+					},
+					{
+						"item-type-name": "phase",
+						"_links": {
+							"self": {
+								"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/2"
+							},
+							"item-type": {
+								"href": "https://localhost:9999/litp/rest/v1/item-types/phase"
+							}
+						},
+						"_embedded": {
+							"item": [{
+								"item-type-name": "collection-of-task",
+								"_links": {
+									"self": {
+										"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/2/tasks"
+									},
+									"collection-of": {
+										"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+									}
+								},
+								"_embedded": {
+									"item": [{
+											"description": "Creating StorageGroup \"ENM645-enm-db_cluster-db-1\" for Node \"ieatrcxb7330\"",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/2/tasks/c0c6090f-ac16-4ec7-af34-1f01ece866fe"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/infrastructure/systems/db-1_system"
+												}
+											},
+											"id": "c0c6090f-ac16-4ec7-af34-1f01ece866fe",
+											"call_type": "create_sg_cb_task"
+										},
+										{
+											"description": "Creating LUN \"LITP2_ENM645_vmscp2\" for Node \"ieatrcxb7337\"",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/2/tasks/ba974425-5387-4463-8a88-6e52a44ae739"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/infrastructure/systems/scp-2_system/disks/vm_disk"
+												}
+											},
+											"id": "ba974425-5387-4463-8a88-6e52a44ae739",
+											"call_type": "create_lun_cb_task"
+										},
+										{
+											"description": "Registering LUN \"LITP2_ENM645_vmscp2\" in Storage Group \"ENM645-enm-scp_cluster-scp-2\"",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/2/tasks/007a4291-e492-44f9-b57c-1c6c4803a176"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/infrastructure/systems/scp-2_system/disks/vm_disk"
+												}
+											},
+											"id": "007a4291-e492-44f9-b57c-1c6c4803a176",
+											"call_type": "create_reglun_cb_task"
+										},
+										{
+											"description": "Registering LUN \"LITP2_ENM645_fen2\" in Storage Group \"ENM645-enm-db_cluster-db-2\"",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/2/tasks/c32d1973-be9c-44c8-a493-0c337c89c7bb"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/infrastructure/storage/storage_providers/san1"
+												}
+											},
+											"id": "c32d1973-be9c-44c8-a493-0c337c89c7bb",
+											"call_type": "create_reglun_cb_task"
+										},
+										{
+											"description": "Registering LUN \"LITP2_ENM645_fen3\" in Storage Group \"ENM645-enm-db_cluster-db-2\"",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/2/tasks/87439d3c-5df7-4c08-bcba-7269ee78dad4"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/infrastructure/storage/storage_providers/san1"
+												}
+											},
+											"id": "87439d3c-5df7-4c08-bcba-7269ee78dad4",
+											"call_type": "create_reglun_cb_task"
+										},
+										{
+											"description": "Checking remote host keys exist for sfs-service \"atnas400401\"",
+											"item-type-name": "task",
+											"state": "Success",
+											"_links": {
+												"self": {
+													"href": "https://localhost:9999/litp/rest/v1/plans/plan/phases/2/tasks/20981771-b4b3-4e62-9b75-edaface5657b"
+												},
+												"item-type": {
+													"href": "https://localhost:9999/litp/rest/v1/item-types/task"
+												},
+												"rel": {
+													"href": "https://localhost:9999/litp/rest/v1/infrastructure/storage/storage_providers/sfs"
+												}
+											},
+											"id": "20981771-b4b3-4e62-9b75-edaface5657b",
+											"call_type": "get_and_save_remote_host_key_callback"
+										}
+									]
+								},
+								"id": "tasks"
+							}]
+						},
+						"id": 2
+					}
+				]
+			},
+			"id": "phases"
+		}]
+	},
+	"id": "plan",
+	"properties": {
+		"state": "successful"
+	}
+}

@@ -1,0 +1,31 @@
+{
+    "_embedded": {
+        "item": [
+            {
+                "id": "str_cluster",
+                "item-type-name": "vcs-cluster",
+                "applied_properties_determinable": true,
+                "state": "Applied",
+                "_links": {
+                    "self": {
+                        "href": "https://localhost:9999/litp/rest/v1/deployments                                                                                        /enm/clusters/svc_cluster"
+                    },
+                    "item-type": {
+                        "href": "https://localhost:9999/litp/rest/v1/item-types/                                                                                        vcs-cluster"
+                    }
+                },
+                "properties": {
+                    "cs_initial_online": "on",
+                    "low_prio_net": "internal",
+                    "app_agent_num_threads": "50",
+                    "default_nic_monitor": "mii",
+                    "cluster_type": "vcs",
+                    "ha_manager": "vcs",
+                    "llt_nets": "heartbeat1,heartbeat2",
+                    "cluster_id": "31144",
+                    "dependency_list": "db_cluster"
+                }
+            }
+                ]
+        }
+}

@@ -1,0 +1,71 @@
+{
+  "penm_init_dvms":[
+    "mock_penm_init_dvms",
+    "mock_penm_verify_ms_connection"
+  ],
+
+  "penm_sw_preparation": [
+    "mock_penm_get_upgrade_type",
+    "mock_penm_software_verification",
+    "mock_penm_disk_allocation",
+    "mock_penm_update_rpms"
+  ],
+
+  "penm_pre_upgrade_checks": [
+    "mock_penm_pre_upgrade_healthcheck",
+    "mock_penm_pre_upgrade_checks",
+    "mock_penm_pre_upgrade_nas_checks",
+    "mock_penm_pre_upgrade_ombs_checks"
+  ],
+
+  "penm_pre_upgrade": [
+    "mock_penm_pre_upgrade_healthcheck",
+    "mock_penm_pre_upgrade_checks",
+    "mock_penm_pre_upgrade_nas_checks",
+    "mock_penm_pre_upgrade_remove_snapshots",
+    "mock_penm_pre_upgrade_ombs_tasks",
+    "mock_penm_upgrade_customisations",
+    "mock_penm_disable_geor_cronjobs",
+    "mock_penm_increase_import_timeout",
+    "mock_penm_check_admin_user"
+  ],
+
+  "penm_pre_upgrade_customization":[
+    "mock_penm_pre_upgrade_customization"
+  ],
+
+  "penm_upgrade": [
+    "mock_penm_kickstart_ms",
+    "mock_penm_init_ms",
+    "mock_penm_install_ms",
+    "mock_penm_restore_ms",
+    "mock_penm_pre_uplift_checks",
+    "mock_penm_upgrade_software",
+    "mock_penm_osuplift_upgrade_software"
+  ],
+
+  "penm_validate_upgrade": [
+    "mock_penm_healthcheck"
+  ],
+
+  "penm_post_upgrade": [
+    "mock_penm_enable_elex",
+    "mock_penm_post_upgrade_license_check",
+    "mock_penm_post_upgrade_minilink_cm",
+    "mock_penm_enable_geor_cronjobs",
+    "mock_penm_verify_ipmi_settings"
+  ],
+
+  "penm_post_upgrade_customization": [
+    "mock_penm_post_upgrade_customization"
+  ],
+
+  "penm_finalize": [
+    "mock_penm_remove_snapshots",
+    "mock_penm_post_upgrade_ombs_tasks",
+    "mock_penm_sfha_uplift",
+    "mock_penm_persist_logs",
+    "mock_penm_sshd_config",
+    "mock_penm_remove_sed"
+  ]
+}

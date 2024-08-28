@@ -1,0 +1,1 @@
+RHEL version 6.10 CXP 9034997 R-state R2Y01

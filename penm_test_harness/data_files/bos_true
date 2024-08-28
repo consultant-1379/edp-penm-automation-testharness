@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo 'true'
+exit 0

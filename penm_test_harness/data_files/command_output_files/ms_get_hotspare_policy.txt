@@ -1,0 +1,9 @@
+Policy ID:                        1
+Disk Type:                        SAS
+Raw Capacity (MBs):               549691
+Number of Disks:                  75
+Unused disks for hot spares:      23
+Recommended Ratio of Keep Unused: 1/30
+Ratio of Keep Unused:             1/25
+Recommended:                      No
+Number to Keep Unused:            3

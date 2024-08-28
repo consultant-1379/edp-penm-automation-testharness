@@ -1,0 +1,14 @@
+[
+  {
+    "statusmsg": "OK",
+    "action": "vxdisk_list",
+    "data": {
+      "out": "DISK                : emc_clariion0_77\nVID                 : DGC\nUDID                : DGC%5FVRAID%5FCKM00150300331%5F60060160D2103B003BFA76051944EB11\nTP_PREF_RCLMCMD     : write_same\nTP_RECLM_CMDS       : -\nTP_ALLOC_UNIT       : 0\nTP_MAX_REC_SIZE     : 0\nTP_LUN_SHIFT_OF     : 0\nSCSI_VERSION        : 4\nSCSI3_VPD_ID        : NAA:60060160D2103B003BFA76051944EB11\nREVISION            : 0533\nRAID_TYPE           : RAID_6\nRAID_GROUP          : 00000004\nPORT_SERIAL_NO      : A5\nPID                 : VRAID\nPHYS_CTLR_NAME      : c1\nMEDIA_TYPE          : hdd\nLUN_TYPE            : std\nLUN_SNO_ORDER       : 2\nLUN_SERIAL_NO       : 60060160D2103B003BFA76051944EB11\nLUN_OWNER           : N\nLIBNAME             : libvxCLARiiON.so\nHARDWARE_MIRROR     : no\nDMP_DEVICE          : emc_clariion0_77\nDDL_THIN_DISK       : thick\nDDL_DEVICE_ATTR     : lun RAID_6\nCUR_OWNER           : N\nCAB_SERIAL_NO       : CKM00150300331\nATYPE               : CLR-ALUA\nARRAY_VOLUME_ID     : 77\nARRAY_PORT_PWWN     : 50:06:01:65:08:60:65:05\nARRAY_CTLR_ID       : A\nANAME               : EMC_CLARiiON\nTRANSPORT           : FC\nENCLOSURE_NAME      : emc_clariion0\nLUN_SIZE            : 419430400\nNUM_PATHS           : 4\nSTATE               : online\nDISK_TYPE           : auto\nFORMAT              : LVM\nDA_INFO             : format=LVM\nDISK_TIMESTAMP      : Tue Dec 22 08:42:13 AM 2020",
+      "retcode": 0,
+      "err": ""
+    },
+    "statuscode": 0,
+    "sender": "ieatrcxb4340",
+    "agent": "edpautodeploy"
+  }
+]

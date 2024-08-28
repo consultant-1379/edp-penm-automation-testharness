@@ -1,0 +1,1 @@
+RHEL version 7.6 CXP 9037739 R-state R1U01

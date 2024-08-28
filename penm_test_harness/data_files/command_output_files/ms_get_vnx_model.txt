@@ -1,0 +1,16 @@
+Agent Rev:           7.33.9 (1.84)
+Name:                K10
+Desc:
+Node:                A-CKM00175000429
+Physical Node:       K10
+Signature:           4116504
+Peer Signature:      4132996
+Revision:            05.33.009.5.186
+SCSI Id:             0
+Model Type:          Rackmount
+Prom Rev:            33.51.00
+SP Memory:           16384
+Serial No:           CKM00175000429
+SP Identifier:       A
+Cabinet:             DPE9
+Model:               VNX5400

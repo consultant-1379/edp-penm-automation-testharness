@@ -1,0 +1,37 @@
+{
+    "_embedded": {
+        "item": [
+            {
+                "id": "db-1",
+                "item-type-name": "node",
+                "applied_properties_determinable": true,
+                "state": "Applied",
+                "_links": {
+                    "self": {
+                        "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/nodes/db-1"
+                    },
+                    "item-type": {
+                        "href": "https://localhost:9999/litp/rest/v1/item-types/node"
+                    }
+                },
+                "properties": {
+                    "is_locked": "false",
+                    "hostname": "cloud-db-1"
+                }
+            }
+        ]
+    },
+    "item-type-name": "collection-of-node",
+    "applied_properties_determinable": true,
+    "state": "Applied",
+    "_links": {
+        "self": {
+            "href": "https://localhost:9999/litp/rest/v1/deployments/enm/clusters/db_cluster/nodes"
+        },
+        "collection-of": {
+            "href": "https://localhost:9999/litp/rest/v1/item-types/node"
+        }
+    },
+    "id": "nodes"
+}
+

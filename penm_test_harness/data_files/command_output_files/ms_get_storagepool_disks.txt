@@ -1,0 +1,52 @@
+Pool Name:  ENM261
+Pool ID:  0
+Raid Type:  r_10
+Percent Full Threshold:  70
+Description:
+Disk Type:  SAS
+State:  Ready
+Status:  OK(0x0)
+Current Operation:  None
+Current Operation State:  N/A
+Current Operation Status:  N/A
+Current Operation Percent Completed:  0
+Raw Capacity (Blocks):  27018445824
+Raw Capacity (GBs):  12883.399
+User Capacity (Blocks):  13490012160
+User Capacity (GBs):  6432.539
+Consumed Capacity (Blocks):  9537564672
+Consumed Capacity (GBs):  4547.865
+Available Capacity (Blocks):  3952447488
+Available Capacity (GBs):  1884.674
+Percent Full:  70.701
+Total Subscribed Capacity (Blocks):  9537564672
+Total Subscribed Capacity (GBs):  4547.865
+Percent Subscribed:  70.701
+Oversubscribed by (Blocks):  0
+Oversubscribed by (GBs):  0.000
+Disks:
+Bus 0 Enclosure 0 Disk 9
+Bus 0 Enclosure 1 Disk 3
+Bus 0 Enclosure 0 Disk 12
+Bus 0 Enclosure 0 Disk 14
+Bus 0 Enclosure 0 Disk 22
+Bus 0 Enclosure 0 Disk 4
+Bus 0 Enclosure 0 Disk 13
+Bus 0 Enclosure 0 Disk 15
+Bus 0 Enclosure 0 Disk 7
+Bus 0 Enclosure 0 Disk 23
+Bus 0 Enclosure 0 Disk 18
+Bus 0 Enclosure 1 Disk 0
+Bus 0 Enclosure 0 Disk 10
+Bus 0 Enclosure 0 Disk 20
+Bus 0 Enclosure 0 Disk 19
+Bus 0 Enclosure 1 Disk 2
+Bus 0 Enclosure 0 Disk 11
+Bus 0 Enclosure 0 Disk 5
+Bus 0 Enclosure 0 Disk 21
+Bus 0 Enclosure 0 Disk 16
+Bus 0 Enclosure 0 Disk 8
+Bus 0 Enclosure 0 Disk 6
+Bus 0 Enclosure 1 Disk 1
+Bus 0 Enclosure 0 Disk 17
+LUNs:  5, 6, 11, 34, 32, 25, 23, 18, 27, 31, 9, 21, 22, 33, 35, 29, 4, 12, 28, 24, 20, 14, 13, 19, 30, 16, 15, 7, 10, 26, 17

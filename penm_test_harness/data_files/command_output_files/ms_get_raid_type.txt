@@ -1,0 +1,3 @@
+Pool Name:  ENM261
+Pool ID:  0
+Raid Type:  r_10

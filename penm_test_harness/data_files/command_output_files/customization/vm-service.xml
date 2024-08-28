@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litp:vm-service xmlns:litp="http://www.ericsson.com/litp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="{VM_ID}" xsi:schemaLocation="http://www.ericsson.com/litp litp--schema/litp.xsd">
+  <cleanup_command>/sbin/service {VM_ID} stop-undefine --stop-timeout=300</cleanup_command>
+  <service_name>{VM_ID}</service_name>
+  <cpunodebind>{CPUNODEBIND}</cpunodebind>
+  <cpus>{CPUS}</cpus>
+  <cpuset>{CPUSET}</cpuset>
+  <image_name>{VM_IMAGE}</image_name>
+  <internal_status_check>{INTERNAL_STATUS_CHECK}</internal_status_check>
+  <ram>{RAM}</ram>
+  <litp:vm-service-vm_aliases-collection id="vm_aliases">
+    <litp:vm-alias id="ntp-server-1">
+      <address>%%ntp_1_IP%%</address>
+      <alias_names>ntp-server1</alias_names>
+    </litp:vm-alias>
+    <litp:vm-alias id="ntp-server-2">
+      <address>%%ntp_2_IP%%</address>
+      <alias_names>ntp-server2</alias_names>
+    </litp:vm-alias>
+    <litp:vm-alias id="ntp-server-3">
+      <address>%%svc_node1_IP_storage%%</address>
+      <alias_names>ntp-server3</alias_names>
+    </litp:vm-alias>
+    <litp:vm-alias id="ntp-server-4">
+      <address>%%svc_node2_IP_storage%%</address>
+      <alias_names>ntp-server4</alias_names>
+    </litp:vm-alias>
+  </litp:vm-service-vm_aliases-collection>
+  <litp:vm-service-vm_firewall_rules-collection id="vm_firewall_rules">
+    <litp:vm-firewall-rule id="fw_udp_allow_jgroups_v4">
+      <action>accept</action>
+      <dport>0-65535</dport>
+      <name>001 allow jgroups udp</name>
+      <proto>udp</proto>
+      <provider>iptables</provider>
+      <source>%%jgroups_subnet%%</source>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_allow_internal_v4">
+      <action>accept</action>
+      <name>002 allow internal ssh</name>
+      <provider>iptables</provider>
+      <source>%%internal_subnet%%</source>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_allow_services_v4">
+      <action>accept</action>
+      <name>003 allow services ssh</name>
+      <provider>iptables</provider>
+      <source>%%ENMservices_subnet%%</source>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_allow_storage_v4">
+      <action>accept</action>
+      <name>004 allow storage ssh</name>
+      <provider>iptables</provider>
+      <source>%%storage_subnet%%</source>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_allow_jgroups_v4">
+      <action>accept</action>
+      <name>005 allow jgroups ssh</name>
+      <provider>iptables</provider>
+      <source>%%jgroups_subnet%%</source>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_allow_backup_v4">
+      <action>accept</action>
+      <name>006 allow backup ssh</name>
+      <provider>iptables</provider>
+      <source>%%backup_subnet%%</source>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_allow_internal_v6">
+      <action>accept</action>
+      <name>007 allow internal ssh ipv6</name>
+      <provider>ip6tables</provider>
+      <source>%%internal_IPv6subnet%%</source>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_allow_services_v6">
+      <action>accept</action>
+      <name>008 allow services ssh ipv6</name>
+      <provider>ip6tables</provider>
+      <source>%%ENMservices_IPv6subnet%%</source>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_drop_ipv6">
+      <action>drop</action>
+      <name>998 drop ssh ipv6</name>
+      <provider>ip6tables</provider>
+    </litp:vm-firewall-rule>
+    <litp:vm-firewall-rule id="fw_ssh_drop_ipv4">
+      <action>drop</action>
+      <name>999 drop ssh ipv4</name>
+      <provider>iptables</provider>
+    </litp:vm-firewall-rule>
+  </litp:vm-service-vm_firewall_rules-collection>
+  <litp:vm-service-vm_network_interfaces-collection id="vm_network_interfaces">
+    <litp:vm-network-interface id="internal">
+      <device_name>eth0</device_name>
+      <gateway>%%{VCS_CLUSTER_ID}_storage_gateway_ip_internal%%</gateway>
+      <host_device>br1</host_device>
+      <ipaddresses>Comma separated list of internal VLAN IPv4 Addresses</ipaddresses>
+      <network_name>internal</network_name>
+    </litp:vm-network-interface>
+    <litp:vm-network-interface id="services">
+      <device_name>eth1</device_name>
+      <gateway>%%ENMservices_gateway%%</gateway>
+      <gateway6>%%ENMservices_IPv6gateway%%</gateway6>
+      <host_device>br0</host_device>
+      <ipaddresses>Comma separated list of services VLAN IPv4 Addresses</ipaddresses>
+      <ipv6addresses>Comma separated list of Service VLAN IPv6 Addresses</ipv6addresses>
+      <network_name>services</network_name>
+    </litp:vm-network-interface>
+  </litp:vm-service-vm_network_interfaces-collection>
+  <litp:vm-service-vm_nfs_mounts-collection id="vm_nfs_mounts">
+    <litp:vm-nfs-mount id="nfsm-data">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-data</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/tor/data</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-mdt">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-mdt</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/etc/opt/ericsson/ERICmodeldeployment</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-pm1">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-pm1</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/pmic1</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-pm2">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-pm2</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/pmic2</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-pmlinks1">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-pmlinks1</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/symvol</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-ddc_data">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-ddc_data</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/var/ericsson/ddc_data</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-hcdumps">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-hcdumps</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/enm/dumps</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-smrs">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-smrs</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/tor/smrs</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-alex">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-alex</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/enm/alex</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-batch">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-batch</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/batch</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-config-mgmt">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-config_mgt</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/config_mgt</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-upgrade_ind">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-upgrade_ind</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/configuration_management/UpgradeIndependence</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-netlog">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-netlog</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/netlog</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-cust_fs">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-cust_fs</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/custom</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-no_rollback">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-no_rollback</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/tor/no_rollback</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-brsadm_home">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-brsadm_home</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/opt/ericsson/storage/user/nas/brsadm</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-storobs_home">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-storobs_home</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/opt/ericsson/storage/user/nas/storobs</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-solr">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-solr</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/enm/solr</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-solrautoid">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-solrautoid</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/enm/solrautoid</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-cron">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-cron</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/vmcrons</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-home">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-home</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/home/shared</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-amos">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-amos</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/log/amos</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-dlms">
+      <device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-dlms</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/enm/dlms/history/data</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-spool_mails">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-spool_mails</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/enm/email/spool</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-tfd_cli">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-tfd_cli</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/tfd_cli_output</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-pmul">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-pmul</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/ul_spectrum_files</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-cnom">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-cnom</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/cnom</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-udc_dashboard">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-udc_dashboard</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/var/lib/docker</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-udc_dashboard_logs">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-udc_logs</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/opt/ericsson/dashboard/data</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-ncm_db">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-ncm_db</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/ncm/db</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-ncm_config">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-ncm_config</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/ncm/config</mount_point>
+    </litp:vm-nfs-mount>
+    <litp:vm-nfs-mount id="nfsm-ncm_log">
+      <device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-ncm_log</device_path>
+      <mount_options>soft,nfsvers=3,defaults</mount_options>
+      <mount_point>/ericsson/ncm/log</mount_point>
+    </litp:vm-nfs-mount>
+  </litp:vm-service-vm_nfs_mounts-collection>
+  <litp:vm-service-vm_packages-collection id="vm_packages">
+    <litp:vm-package id="{CUSTOM_PACKAGE}">
+      <name>{CUSTOM_PACKAGE}</name>
+    </litp:vm-package>
+  </litp:vm-service-vm_packages-collection>
+  <litp:vm-service-vm_ssh_keys-collection id="vm_ssh_keys">
+    <litp:vm-ssh-key id="vm-ssh-key-id">
+      <ssh_key>{VM_SSH_KEY}</ssh_key>
+    </litp:vm-ssh-key>
+  </litp:vm-service-vm_ssh_keys-collection>
+  <litp:vm-service-vm_yum_repos-collection id="vm_yum_repos">
+    <litp:vm-yum-repo id="common">
+      <base_url>http://%%LMS_IP_internal%%/ENM_common/</base_url>
+      <name>common</name>
+    </litp:vm-yum-repo>
+    <litp:vm-yum-repo id="{CUSTOM_REPO}">
+      <base_url>http://%%LMS_IP_internal%%/{CUSTOM_REPO}/</base_url>
+      <name>{CUSTOM_REPO}</name>
+    </litp:vm-yum-repo>
+    <litp:vm-yum-repo id="OS">
+      <base_url>http://%%LMS_IP_internal%%/6/os/x86_64/Packages/</base_url>
+      <name>OS</name>
+    </litp:vm-yum-repo>
+    <litp:vm-yum-repo id="UPDATES">
+      <base_url>http://%%LMS_IP_internal%%/6/updates/x86_64/Packages/</base_url>
+      <name>UPDATES</name>
+    </litp:vm-yum-repo>
+  </litp:vm-service-vm_yum_repos-collection>
+</litp:vm-service>

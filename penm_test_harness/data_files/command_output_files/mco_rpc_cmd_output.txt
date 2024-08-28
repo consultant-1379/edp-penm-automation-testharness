@@ -1,0 +1,14 @@
+[
+  {
+    "statusmsg": "OK",
+    "action": "get_idenmgmt_user_pass_key",
+    "data": {
+      "out": "U2FsdGVkX19bXYdFdgUAYx3hv30vecKwxotzQkmPuRc=",
+      "retcode": 0,
+      "err": ""
+    },
+    "statuscode": 0,
+    "sender": "cloud-db-1",
+    "agent": "edpautodeploy"
+  }
+]

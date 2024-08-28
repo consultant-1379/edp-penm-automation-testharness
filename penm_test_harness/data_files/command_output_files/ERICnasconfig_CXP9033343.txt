@@ -1,0 +1,11 @@
+Name        : ERICnasconfig_CXP9033343     Relocations: (not relocatable)
+Version     : 1.44.1                            Vendor: Ericsson AB
+Release     : 1                             Build Date: Thu 08 Apr 2021 11:09:25 IST
+Install Date: Mon 09 Aug 2021 11:46:41 IST      Build Host: seliius28762.seli.gic.ericsson.se
+Group       : ERI-NMS                       Source RPM: ERICnasconfig_CXP9033343-1.44.1-1.src.rpm
+Size        : 328835213                        License: (c) Ericsson
+Signature   : (none)
+Packager    : R1BE01
+URL         : www.ericsson.com
+Summary     : nasconfig_CXP9033343
+Description :
